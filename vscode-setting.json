@@ -1,0 +1,39 @@
+// 保存在 git@github.com:bubbletg/vscode-setting.git
+{
+    "editor.accessibilitySupport": "off",
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": true,
+    "git.autofetch": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    // 👇🏻---------控制台--------------------------------
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    // 👆🏻---------控制台--------------------------------
+
+    // 👇🏻---------同步设置------------------------------
+    "settingsSync.ignoredExtensions": [
+        "ms-ceintl.vscode-language-pack-zh-hans"
+      ],
+    "settingsSync.ignoredSettings": [
+
+    ],
+    // 👆🏻---------同步设置------------------------------
+
+    // 👇🏻---------代码格式化----------------------------
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // 👆🏻---------代码格式化-----------------------------
+
+    // 👇🏻---------主题 相关----------------------------
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "monokai-charcoal (purple)",
+    "editor.inlineSuggest.enabled": true,
+    "editor.guides.bracketPairs": "active"
+    // 👆🏻---------主题 相关----------------------------
+}

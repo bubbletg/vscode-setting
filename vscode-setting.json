@@ -3,6 +3,9 @@
     "editor.accessibilitySupport": "off",
     "editor.fontSize": 14,
     "editor.tabSize": 2,
+    //👇🏻---------差异编辑器:忽略修剪空白(也在其他地方修改过)-----
+    "diffEditor.ignoreTrimWhitespace": false,
+
     "explorer.confirmDelete": true,
     "git.autofetch": true,
     "security.workspace.trust.untrustedFiles": "open",
@@ -28,12 +31,30 @@
     "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
     // 👆🏻---------代码格式化-----------------------------
 
     // 👇🏻---------主题 相关----------------------------
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "monokai-charcoal (purple)",
     "editor.inlineSuggest.enabled": true,
-    "editor.guides.bracketPairs": "active"
-    // 👆🏻---------主题 相关----------------------------
+    "editor.guides.bracketPairs": "active",
+
+//👇🏻---------------------插件相关-----------------------------
+
+    // 👇🏻---------github.copilot ----------------------------
+    "github.copilot.enable": {
+        "*": false,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "javascript": true,
+        "html": true,
+        "vue": true
+    },
+
+    // 👇🏻---------color-highlight ----------------------------
+    "color-highlight.markRuler": false,
 }
